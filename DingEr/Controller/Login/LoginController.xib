@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController">
+            <connections>
+                <outlet property="accountView" destination="YVB-gk-cjZ" id="v6U-PR-9Jo"/>
+                <outlet property="passField" destination="hSB-LW-NGW" id="HBs-WP-5XE"/>
+                <outlet property="passIcon" destination="Z8m-PH-4SR" id="Mct-sg-wUZ"/>
+                <outlet property="phoneField" destination="4Xe-nO-dDi" id="vWe-wf-HIw"/>
+                <outlet property="phoneIcon" destination="IaQ-k6-wKu" id="Lum-8i-JJ1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="455" y="313"/>
+        </view>
+        <view contentMode="scaleToFill" id="YVB-gk-cjZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acount.png" translatesAutoresizingMaskIntoConstraints="NO" id="IaQ-k6-wKu">
+                    <rect key="frame" x="33" y="40" width="32" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="8uM-fz-ckH"/>
+                        <constraint firstAttribute="width" constant="32" id="DFN-Oy-TxB"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pass.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z8m-PH-4SR">
+                    <rect key="frame" x="33" y="105" width="32" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="0dD-t0-sIa"/>
+                        <constraint firstAttribute="width" constant="32" id="isC-Gj-je6"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgu-Fz-Dic">
+                    <rect key="frame" x="16" y="151" width="343" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iD5-5h-5hS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-dq-r7f">
+                    <rect key="frame" x="16" y="86" width="343" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JB6-kj-o5B"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCt-3h-euj">
+                    <rect key="frame" x="16" y="21" width="343" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4l7-pf-WLY"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Xe-nO-dDi">
+                    <rect key="frame" x="78" y="40" width="265" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="02Q-UZ-o65"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hSB-LW-NGW">
+                    <rect key="frame" x="78" y="105" width="265" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="lR3-Tn-5FC"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8Q1-Rw-bWZ" firstAttribute="trailing" secondItem="hSB-LW-NGW" secondAttribute="trailing" constant="32" id="1a7-uW-GIs"/>
+                <constraint firstItem="hSB-LW-NGW" firstAttribute="top" secondItem="bwe-dq-r7f" secondAttribute="bottom" constant="18" id="2wo-Sm-O7x"/>
+                <constraint firstAttribute="trailing" secondItem="bwe-dq-r7f" secondAttribute="trailing" constant="16" id="GV8-N0-RXC"/>
+                <constraint firstItem="hSB-LW-NGW" firstAttribute="leading" secondItem="Z8m-PH-4SR" secondAttribute="trailing" constant="13" id="GY3-Oq-F00"/>
+                <constraint firstItem="IaQ-k6-wKu" firstAttribute="leading" secondItem="8Q1-Rw-bWZ" secondAttribute="leading" constant="33" id="Goa-Aa-Ygp"/>
+                <constraint firstItem="IaQ-k6-wKu" firstAttribute="top" secondItem="PCt-3h-euj" secondAttribute="bottom" constant="18" id="Jbx-Gc-KYJ"/>
+                <constraint firstAttribute="trailing" secondItem="PCt-3h-euj" secondAttribute="trailing" constant="16" id="M2x-aa-7NW"/>
+                <constraint firstItem="PCt-3h-euj" firstAttribute="leading" secondItem="YVB-gk-cjZ" secondAttribute="leading" constant="16" id="MjO-xd-lgo"/>
+                <constraint firstItem="Z8m-PH-4SR" firstAttribute="leading" secondItem="8Q1-Rw-bWZ" secondAttribute="leading" constant="33" id="QNw-uW-Q1t"/>
+                <constraint firstItem="Xgu-Fz-Dic" firstAttribute="leading" secondItem="YVB-gk-cjZ" secondAttribute="leading" constant="16" id="QWt-ex-o1q"/>
+                <constraint firstItem="4Xe-nO-dDi" firstAttribute="top" secondItem="PCt-3h-euj" secondAttribute="bottom" constant="18" id="THb-dg-CM2"/>
+                <constraint firstItem="PCt-3h-euj" firstAttribute="top" secondItem="8Q1-Rw-bWZ" secondAttribute="top" constant="21" id="WCv-Go-Ei4"/>
+                <constraint firstItem="8Q1-Rw-bWZ" firstAttribute="trailing" secondItem="4Xe-nO-dDi" secondAttribute="trailing" constant="32" id="eFM-RB-mQh"/>
+                <constraint firstItem="bwe-dq-r7f" firstAttribute="leading" secondItem="YVB-gk-cjZ" secondAttribute="leading" constant="16" id="eeF-gs-zuH"/>
+                <constraint firstItem="Z8m-PH-4SR" firstAttribute="top" secondItem="bwe-dq-r7f" secondAttribute="bottom" constant="18" id="hW1-oG-OFX"/>
+                <constraint firstItem="4Xe-nO-dDi" firstAttribute="leading" secondItem="IaQ-k6-wKu" secondAttribute="trailing" constant="13" id="jT2-Es-6Vd"/>
+                <constraint firstItem="Xgu-Fz-Dic" firstAttribute="top" secondItem="Z8m-PH-4SR" secondAttribute="bottom" constant="12" id="wf2-d0-eRu"/>
+                <constraint firstItem="bwe-dq-r7f" firstAttribute="top" secondItem="IaQ-k6-wKu" secondAttribute="bottom" constant="12" id="x1v-9v-AZg"/>
+                <constraint firstAttribute="trailing" secondItem="Xgu-Fz-Dic" secondAttribute="trailing" constant="16" id="xwE-8w-i56"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8Q1-Rw-bWZ"/>
+            <point key="canvasLocation" x="758.5" y="113"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="acount.png" width="90" height="111"/>
+        <image name="pass.png" width="90" height="110"/>
+    </resources>
+</document>
